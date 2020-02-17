@@ -20,7 +20,7 @@ class Tickets extends React.Component {
   };
 
   render () {
-    const { openedTicket, closedTicketCount } = this.props.support;
+    const { openedTicket, info } = this.props.support;
     
     return (
       <Grid container spacing={2}>
@@ -33,7 +33,7 @@ class Tickets extends React.Component {
         </Grid>
 
         <Grid item xs={12}>
-          <Alert severity="info">{`Ci sono ${closedTicketCount} tickets chiusi.`}</Alert>
+          <Alert severity="info">{info}</Alert>
         </Grid>
 
         <Grid item xs={12}>

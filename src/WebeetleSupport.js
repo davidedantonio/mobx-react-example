@@ -6,17 +6,12 @@ import {
 } from "mobx";
 
 class WebeetleSupport {
-  @observable tickets = [{
-    id: 213123123123,
-    createDate: new Date(),
-    closeDate: null,
-    subject: 'This is a ticket',
-    body: 'This is a long body ticket. Interesting'
-  }];
+  @observable tickets = [];
+  @observable info = '';
 
   constructor() {
     autorun(() => {
-      console.log(`This is ticket: ${this.tickets.length}`);
+      this.info = `Ci sono ${this.closedTicketCount} tickets chiusi.`
     });
   }
 
