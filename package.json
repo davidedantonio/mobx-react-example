@@ -2,6 +2,23 @@
   "name": "mobx-react-example",
   "version": "1.0.0",
   "private": true,
+  "description": "A simple MobX example",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidedantonio/mobx-react-example.git"
+  },
+  "keywords": [
+    "mobx",
+    "react",
+    "webeetle"
+  ],
+  "author": "Davide D'Antonio <davide.dantonio@webeetle.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davidedantonio/mobx-react-example/issues"
+  },
+  "homepage": "https://github.com/davidedantonio/mobx-react-example#readme",
   "dependencies": {
     "@material-ui/core": "^4.9.2",
     "@material-ui/icons": "^4.9.1",
@@ -18,6 +35,7 @@
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.1"
   },
+  "devDependencies": {},
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build"
