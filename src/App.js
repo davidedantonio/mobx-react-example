@@ -8,7 +8,10 @@ function App() {
   return (
     <Grid
       container
+
+      
       direction="row"
+      
       justify="center"
       alignItems="center"
     >
